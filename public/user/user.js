@@ -1,5 +1,5 @@
 $(function(){
-	var	socketio = io.connect('/user');
+	var socketio = io.connect('/user');
 	
 	var $userNameArea = $('#userNameArea');
 	var $userName = $('#userName');

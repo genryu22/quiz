@@ -40,13 +40,13 @@ html, body {
 	width: 30vw;
 	background-color: #ffffe5;
 	box-shadow: 5px 5px 10px #555;
-    display: none;
+	display: none;
 }
 
 #now_answer {
 	height: auto;
 	width: 100%;
-    display: none;
+	display: none;
 	margin: 5px auto;
 }
 
@@ -55,12 +55,12 @@ html, body {
 	font-weight: bold;
 	text-align: center;
 	margin: 5px 0px;
-    display: none;
+	display: none;
 }
 
 #maru, #batsu {
 	width: 90%;
 	height: auto;
 	margin: 5px auto;
-    display: none;
+	display: none;
 }
