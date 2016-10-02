@@ -5,6 +5,10 @@ html, body {
 	background-color: #FFFFFF;
 }
 
+#buttonArea {
+	display: none;
+}
+
 #answer {
 	height: 80vmin;
 	width: 80vmin;

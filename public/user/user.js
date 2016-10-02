@@ -1,10 +1,11 @@
 $(function(){
 	var	socketio = io.connect('/user');
-				
-	var user_name = window.prompt("名前を入力してください。");
-	user_name = user_name == null ? '' : user_name;
-	socketio.emit("request", user_name);
 	
+	var $userNameArea = $('#userNameArea');
+	var $userName = $('#userName');
+	var $submitUserName = $('#submitUserName');
+	
+	var $buttonArea = $('#buttonArea');
 	var $answer = $('#answer');
 	var $name_label = $('#name_label');
 	var $now_answer = $('#now_answer');
@@ -23,9 +24,17 @@ $(function(){
 		}
 	}());
 	
-	$name_label
-		.text(user_name)
-		.css('font-size', Math.floor(15 / user_name.length) + 'vw');
+	$submitUserName.click(function() {
+		var userName = $userName.val();
+		if (userName != null && userName != '') {
+			socketio.emit("request", userName);
+			$name_label
+				.text(userName)
+				.css('font-size', Math.floor(15 / userName.length) + 'vw');
+			$userNameArea.hide();
+			$buttonArea.show();
+		}
+	});
 	
 	$answer.bind("touchstart", function() {
 		socketio.emit("push");
