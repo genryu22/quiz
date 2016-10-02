@@ -1,0 +1,15 @@
+html {
+	margin: 0;
+	font-family: Helvetica,Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic,“ヒラギノ角ゴ ProN W3″,“Hiragino Kaku Gothic ProN”, “メイリオ”,Meiryo, sans-serif;
+}
+
+.center {
+	height: 100vh;
+	width: 100vw;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}

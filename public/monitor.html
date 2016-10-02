@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>早押しクイズ モニター用</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="monitor/monitor.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="apple-touch-icon" href="image/now.png">
+</head>
+
+<body>
+	<div class="center" id="result"></div>
+	<audio id="question" src="sound/question.mp3"></audio>
+	<audio id="answer" src="sound/answer.mp3"></audio>
+	<audio id="correct" src="sound/correct.mp3"></audio>
+	<audio id="incorrect" src="sound/incorrect.mp3"></audio>
+
+	<script src="socket.io.js"></script>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="monitor/monitor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+table, tr {
+	width: 100vw;
+	table-layout: fixed;
+	margin: 0;
+}
+
+#clearButton {
+	width: 100vw;
+	height: 10vh;
+	background-image: url('../image/button.jpg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+	background-color: white;
+	border: 0px;
+	font-size: xx-large;
+}
+
+#correctButton, #incorrectButton {
+	height: 10vh;
+	width: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-color: white;
+	border: 0px;
+}
+
+#correctButton {
+	background-image: url('../image/maru.jpg');
+}
+
+#incorrectButton {
+	background-image: url('../image/batsu.jpg');
+}
+
+#log {
+	font-size: large;
+}

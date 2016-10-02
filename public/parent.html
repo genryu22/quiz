@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>早押しクイズ 親機</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="parent/parent.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="apple-touch-icon" href="image/maru.jpg">
+</head>
+
+<body>
+	<input id="clearButton" type="button" value="Reset">
+	<table>
+		<tr>
+			<th>
+				<input id="correctButton" type="button">
+			</th>
+			<th>
+				<input id="incorrectButton" type="button">
+			</th>
+		</tr>
+	</table>
+	<div id="log"></div>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="socket.io.js"></script>
+	<script src="parent/parent.js"></script>
+</body>
+
+</html>

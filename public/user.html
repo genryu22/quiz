@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>早押しクイズ</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="image/button.jpg">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="user/user.css">
+	<link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+	<div id="name_label"></div>
+	<div class="left">
+		<img id="now_answer" src="image/now.png"></img>
+		<div id="answer_name"></div>
+		<img id="maru" src="image/maru.png"></img>
+		<img id="batsu" src="image/batsu.png"></img>
+	</div>
+	<div class="center">
+		<button id="answer"></button>
+	</div>
+	<audio id="sound_answer" src="sound/answer.mp3"></audio>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="socket.io.js"></script>
+	<script src="user/user.js"></script>
+</body>
+
+</html>
