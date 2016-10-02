@@ -5,9 +5,6 @@ var fs = require('fs');
 app.listen(8080);
 
 var firstPush = true;
-initUser();
-initParent();
-initMonitor();
 
 function handler(req, res) {
 	fs.readFile(req.url == '/' ? './public/user.html' : './public' + req.url, function (err, data) {
@@ -21,7 +18,7 @@ function handler(req, res) {
 	});
 }
 
-function initUser() {
+(function initUser() {
 	var user = io.of('/user');
 	user.on('connection', function(socket) {
 		socket.on('request', function(name) {
@@ -42,9 +39,9 @@ function initUser() {
 			io.of('/parent').emit('log', socket.nickname + ' が切断しました。');
 		});
 	});
-}
+}());
 
-function initParent() {
+(function initParent() {
 	var parent = io.of('/parent');
 	parent.on('connection', function(socket) {
 		socket.on('reset', function() {
@@ -66,11 +63,11 @@ function initParent() {
 			parent.emit('log', '不正解です。');
 		});
 	});
-}
+}());
 
-function initMonitor() {
+(function initMonitor() {
 	var monitor = io.of('/monitor');
 	monitor.on('connection', function(socket) {
 		
 	});
-}
+}());
