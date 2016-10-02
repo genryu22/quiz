@@ -56,11 +56,4 @@ $(function(){
 		$batsu.hide();
 		$left.hide();
 	});
-	
-	function playSound(name) {
-		var sound = $('#' + name)[0];
-		sound.pause();
-		sound.load();
-		sound.play();
-	}
 });
