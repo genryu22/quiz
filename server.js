@@ -53,13 +53,11 @@ function handler(req, res) {
 		
 		socket.on('correct', function() {
 			io.of('/monitor').emit('correct');
-			io.of('/user').emit('correct');
 			parent.emit('log', '正解です。');
 		});
 		
 		socket.on('incorrect', function() {
 			io.of('/monitor').emit('incorrect');
-			io.of('/user').emit('incorrect');
 			parent.emit('log', '不正解です。');
 		});
 	});

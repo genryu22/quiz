@@ -49,14 +49,6 @@ $(function(){
 		$left.show();
 	});
 	
-	socketio.on("correct", function() {
-		//$maru.show();
-	});
-	
-	socketio.on("incorrect", function() {
-		//$batsu.show();
-	});
-	
 	socketio.on("reset", function() {
 		$now_answer.hide();
 		$answer_name.hide().text('');
