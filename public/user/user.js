@@ -36,7 +36,7 @@ $(function(){
 		}
 	});
 	
-	$answer.bind("touchstart", function() {
+	$answer.bind("click", function() {
 		socketio.emit("push");
 	});
 	
